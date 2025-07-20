@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      padding: 2rem;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    .form-actions button {
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .save-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .cancel-btn {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .photo-preview {
+      margin-top: 1rem;
+      max-width: 100px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Student Registration Form</h2>
+    <form id="studentForm">
+      <div class="form-group">
+        <label for="studentName">Student's Name</label>
+        <input type="text" id="studentName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" rows="2" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+
+      <div class="form-group">
+        <label for="class">Class</label>
+        <select id="class" required>
+          <option value="">Select Class</option>
+          <option>Nursery</option>
+          <option>LKG</option>
+          <option>UKG</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="parentsName">Parent's Name</label>
+        <input type="text" id="parentsName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" pattern="[0-9]{10}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" accept="image/*">
+        <img id="photoPreview" class="photo-preview" />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="save-btn">Save</button>
+        <button type="button" class="cancel-btn" onclick="resetForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('studentForm');
+    const photoInput = document.getElementById('photo');
+    const photoPreview = document.getElementById('photoPreview');
+
+    // Show image preview
+    photoInput.addEventListener('change', function() {
+      const file = photoInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          photoPreview.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      } else {
+        photoPreview.src = '';
+      }
+    });
+
+    // Handle form submit
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Student data saved successfully!');
+      // Here you can POST the form data via AJAX or FormData API
+      form.reset();
+      photoPreview.src = '';
+    });
+
+    // Reset form
+    function resetForm() {
+      form.reset();
+      photoPreview.src = '';
+    }
+  </script>
+
+</body>
+</html>
