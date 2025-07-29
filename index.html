@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>FutureNest Academy</title>
+</head>
+
+<body>
+  <header>
+    <h1>FutureNest Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#gallery">Galley</a></li>
+        <li><a href="/add-student.html">Add Student</a></li>
+        <li><a href="/ai-result-prediction.html">AI Result</a></li>
+        <li><a href="/student-list.html">Student List</a></li>
+        <li><a href="#">Login/ Register</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" aria-label="Toggle Menu" role="button" tabindex="0">
+      <span></span> <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="hero" id="hero" role="banner" aria-label="Hero Section">
+    <h2>Welcome to FutureNest Academy</h2>
+    <h3 id="typing-text" aria-live="polite" aria-atomic="true"></h3>
+    <button type="button" aria-label="Explore More about FutureNest Academy">
+      Explore More
+    </button>
+  </section>
+
+  <section class="about" id="about" tabindex="-1" aria-label="About FutureNest Academy">
+    <h3>About Us</h3>
+    <p>
+      FutureNest Academy is a hub of excellence, nurturung young minds with
+      innovative teaching methods, modern facilities, and a passion for
+      lifelong Learning
+    </p>
+    <div class="counters" role="list" aria-label="Statistics about FutureNest Academy">
+      <div class="counter" data-label="Students" role="listitem" aria-live="polite">
+        <span data-target="1200">0</span>
+      </div>
+      <div class="counter" data-label="Teachers" role="listitem" aria-live="polite">
+        <span data-target="85">0</span>
+      </div>
+      <div class="counter" data-label="Year of Excellence" role="listitem" aria-live="polite">
+        <span data-target="25">0</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs" id="programs" tabindex="-1" aria-label="Our academic programs">
+    <h3>Our Programs</h3>
+    <div class="programs-grid">
+      <article class="program" tabindex="0" aria-label="STEM Excellence Program">
+        <img src="/assets/image/stem_classroom.jpg" alt="Students in STEM classroom" />
+        <h4>STEM Excellence</h4>
+        <p>
+          Hands-on programs in science, technology, engineering, and
+          mathematics to prepare future innovators.
+        </p>
+      </article>
+      <article class="program" tabindex="0" aria-label="Arts & Culture Program">
+        <img src="/assets/image/art_activities.jpeg" alt="Artistic painting and music activities" />
+        <h4>Arts & Culture</h4>
+        <p>
+          Developing creativity and cultural awareness through arts, music,
+          and drama.
+        </p>
+      </article>
+      <article class="program" tabindex="0" aria-label="Sports & Fitness Program">
+        <img src="/assets/image/sports.jpg" alt="Students playing sports" />
+        <h4>Sports & Fitness</h4>
+        <p>
+          Comprehensive sports and fitness programs to foster teamwork and
+          personal growth.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery" tabindex="-1" aria-label="Gallery of FutureNest Academy">
+    <h3>Our Gallery</h3>
+    <div class="gallery-grid">
+      <img src="/assets/image/students_with_laptop.jpg" alt="Students in classroom with laptops" tabindex="0" />
+      <img src="/assets/image/teacher_in_Science_lab.jpg" alt="Teacher helping student in science lab" tabindex="0" />
+      <img src="/assets/image/presenting_presentation.jpg" alt="Students presenting project" tabindex="0" />
+      <img src="/assets/image/exterior building.jpg" alt="School building exterior" tabindex="0" />
+    </div>
+  </section>
+
+  <section class="testimonials" tabindex="-1" aria-label="Student testimonials">
+    <h3>What Students Say</h3>
+    <div class="testimonial-container" role="list">
+      <article class="testimonial active" role="listitem" aria-live="polite">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Portrait of student Anisha" />
+        <p>
+          "An amazing place to learn and grow. I’m proud to be part of
+          FutureNest!" - Anisha
+        </p>
+      </article>
+      <article class="testimonial" role="listitem" aria-live="polite">
+        <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Portrait of student Rohan" />
+        <p>
+          "The teachers really care about our success and future." - Rohan
+        </p>
+      </article>
+      <article class="testimonial" role="listitem" aria-live="polite">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Portrait of student Sita" />
+        <p>"I made lifelong friends and memories here." - Sita</p>
+      </article>
+    </div>
+    <div class="dots" role="tablist" aria-label="Testimonial navigation">
+      <button class="dot active" role="tab" aria-selected="true" aria-controls="testimonial1" id="tab1"
+        tabindex="0"></button>
+      <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial2" id="tab2"
+        tabindex="-1"></button>
+      <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial3" id="tab3"
+        tabindex="-1"></button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" tabindex="-1" aria-label="Contact FutureNest Academy">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" placeholder="Your Name" aria-label="Your Name" required />
+      <input type="email" placeholder="Your Email" aria-label="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" aria-label="Your Message" required></textarea>
+      <button type="submit" aria-label="Send Message">Send Message</button>
+    </form>
+  </section>
+
+  <footer role="contentinfo">
+    &copy; 2025 FutureNest Academy. All Rights Reserved.
+  </footer>
+</body>
+
+<script src="/assets/js/script.js"></script>
+
+</html>

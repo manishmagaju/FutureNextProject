@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Student | FutureNest Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/add-student.css" />
+</head>
+
+<body>
+  <header>
+    <h1>FutureNest Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html#gallery">Galley</a></li>
+        <li><a href="#">Add Student</a></li>
+        <li><a href="/ai-result-prediction.html">AI Result</a></li>
+        <li><a href="/student-list.html">Student List</a></li>
+        <li><a href="#">Login/ Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Add New Student</h2>
+  </section>
+
+  <div class="form-container">
+    <h3>Student Information</h3>
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter student's full name" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="class">Class</label>
+      <select id="class" name="class" required>
+        <option value="">Select class</option>
+        <option value="Nursery">Nursery</option>
+        <option value="KG">KG</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+      </select>
+
+      <label for="contact">Parent's Contact</label>
+      <input type="tel" id="contact" name="contact" placeholder="Enter parent's phone number" required />
+
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+
+  <footer>&copy; 2025 FutureNest Academy. All Rights Reserved.</footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>View Students | FutureNest Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/student-list.css" />
+</head>
+
+<body>
+  <header>
+    <h1>FutureNest Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html#gallery">Galley</a></li>
+        <li><a href="/add-student.html">Add Student</a></li>
+        <li><a href="/ai-result-prediction.html">AI Result</a></li>
+        <li><a href="#">Student List</a></li>
+        <li><a href="#">Login/ Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>View All Students</h2>
+  </section>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by name..." />
+    <select id="filter-class">
+      <option value="">All Classes</option>
+      <option value="1">Grade 1</option>
+      <option value="2">Grade 2</option>
+      <option value="3">Grade 3</option>
+      <option value="4">Grade 4</option>
+      <option value="5">Grade 5</option>
+      <option value="6">Grade 6</option>
+      <option value="7">Grade 7</option>
+      <option value="8">Grade 8</option>
+      <option value="9">Grade 9</option>
+      <option value="10">Grade 10</option>
+    </select>
+  </div>
+
+  <div class="students-grid" id="students-grid">
+    <div class="student-card" data-name="Anisha" data-class="1">
+      <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Anisha" />
+      <h4>Anisha Sharma</h4>
+      <p>Class: 1</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Rohan" data-class="2">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Rohan" />
+      <h4>Rohan Thapa</h4>
+      <p>Class: 2</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Sita" data-class="3">
+      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Sita" />
+      <h4>Sita Koirala</h4>
+      <p>Class: 3</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Amit" data-class="4">
+      <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Amit" />
+      <h4>Amit Raj Joshi</h4>
+      <p>Class: 4</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Nisha" data-class="5">
+      <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="Nisha" />
+      <h4>Nisha Bhandari</h4>
+      <p>Class: 5</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Prakash" data-class="6">
+      <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Prakash" />
+      <h4>Prakash Shrestha</h4>
+      <p>Class: 6</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Meera" data-class="7">
+      <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="Meera" />
+      <h4>Meera Adhikari</h4>
+      <p>Class: 7</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Bibek" data-class="8">
+      <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="Bibek" />
+      <h4>Bibek Mahato</h4>
+      <p>Class: 8</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Puja" data-class="9">
+      <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Puja" />
+      <h4>Puja KC</h4>
+      <p>Class: 9</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+    <div class="student-card" data-name="Arjun" data-class="10">
+      <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Arjun" />
+      <h4>Arjun Kunwar</h4>
+      <p>Class: 10</p>
+      <div class="actions">
+        <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 FutureNest Academy. All Rights Reserved.</footer>
+</body>
+
+<script src="/assets/js/student-list.js"></script>
+
+</html>
