@@ -1,130 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grades - FutureNest Academy</title>
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    :root {
-      --color-primary: #1e40af;
-      --color-secondary: #facc15;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 font-sans">
-  <div class="flex">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
-      <div class="p-6 text-center border-b border-gray-200">
-        <h2 class="text-xl font-bold text-[color:var(--color-primary)]">FutureNest Academy</h2>
-        <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
-      </div>
-      <nav class="mt-6 px-4">
-        <ul class="space-y-4 text-gray-700">
-          <li>
-            <a href="grades.html" class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold">
-              <i class="fas fa-graduation-cap"></i> Grades
-            </a>
-          </li>
-          <li>
-            <a href="attendance.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-calendar-check"></i> Attendance
-            </a>
-          </li>
-          <li>
-            <a href="notifications.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-bell"></i> Notifications
-            </a>
-          </li>
-          <li>
-            <a href="documents.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-file-alt"></i> Documents
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-envelope"></i> Contact Teacher
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <div class="ml-64 w-full">
-      <!-- Header -->
-      <header class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200">
-        <h1 class="text-xl font-semibold text-gray-800 flex items-center gap-2">
-          <i class="fas fa-chart-line mr-2 text-[color:var(--color-primary)]"></i>
-          Grades
-        </h1>
-        <a href="parent-dashboard.html" class="text-sm text-[color:var(--color-primary)] hover:underline">
-          ← Back to Dashboard
-        </a>
-      </header>
-
-      <!-- Grades Section -->
-      <main class="p-6 space-y-6">
-        <!-- Class Selection Dropdown -->
-        <div class="bg-white p-4 rounded shadow">
-          <label for="classSelect" class="block text-sm font-medium text-gray-700 mb-2">Select Class</label>
-          <select id="classSelect" class="w-full border border-gray-300 rounded px-3 py-2">
-            <option>Grade 10</option>
-            <option>Grade 9</option>
-            <option>Grade 8</option>
-            <option>Grade 7</option>
-          </select>
-        </div>
-
-        <!-- Selected Class Grades -->
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-lg font-bold text-[color:var(--color-primary)] mb-4">
-            <i class="fas fa-graduation-cap mr-2"></i>Grades
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grades - FutureNest Academy</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
+        <div class="p-6 text-center border-b border-gray-200">
+          <h2 class="text-xl font-bold text-[color:var(--color-primary)]">
+            FutureNest Academy
           </h2>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left border border-gray-200">
-              <thead class="bg-[color:var(--color-primary)] text-white">
-                <tr>
-                  <th class="py-2 px-4">Subject</th>
-                  <th class="py-2 px-4">Term 1</th>
-                  <th class="py-2 px-4">Term 2</th>
-                  <th class="py-2 px-4">Final Exam</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                <tr class="border-b">
-                  <td class="py-2 px-4">Mathematics</td>
-                  <td class="py-2 px-4">A</td>
-                  <td class="py-2 px-4">A-</td>
-                  <td class="py-2 px-4">B+</td>
-                </tr>
-                <tr class="border-b">
-                  <td class="py-2 px-4">Science</td>
-                  <td class="py-2 px-4">B</td>
-                  <td class="py-2 px-4">A</td>
-                  <td class="py-2 px-4">A</td>
-                </tr>
-                <tr class="border-b">
-                  <td class="py-2 px-4">English</td>
-                  <td class="py-2 px-4">A</td>
-                  <td class="py-2 px-4">A</td>
-                  <td class="py-2 px-4">A+</td>
-                </tr>
-                <tr class="border-b">
-                  <td class="py-2 px-4">Nepali</td>
-                  <td class="py-2 px-4">B+</td>
-                  <td class="py-2 px-4">B</td>
-                  <td class="py-2 px-4">B</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="mt-4 text-right text-lg font-medium text-green-600">Overall GPA: 3.78</p>
+          <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
         </div>
-      </main>
+        <nav class="mt-6 px-4">
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              <a
+                href="grades.html"
+                class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold"
+              >
+                <i class="fas fa-graduation-cap"></i> Grades
+              </a>
+            </li>
+            <li>
+              <a
+                href="attendance.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-calendar-check"></i> Attendance
+              </a>
+            </li>
+            <li>
+              <a
+                href="notifications.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-bell"></i> Notifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="documents.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-file-alt"></i> Documents
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-envelope"></i> Contact Teacher
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="ml-64 w-full">
+        <!-- Header -->
+        <header
+          class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200"
+        >
+          <h1
+            class="text-xl font-semibold text-gray-800 flex items-center gap-2"
+          >
+            <i
+              class="fas fa-chart-line mr-2 text-[color:var(--color-primary)]"
+            ></i>
+            Grades
+          </h1>
+          <a
+            href="parent-dashboard.html"
+            class="text-sm text-[color:var(--color-primary)] hover:underline"
+          >
+            ← Back to Dashboard
+          </a>
+        </header>
+
+        <!-- Grades Section -->
+        <main class="p-6 space-y-6">
+          <!-- Class Selection Dropdown -->
+          <div class="bg-white p-4 rounded shadow">
+            <label
+              for="classSelect"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Select Class</label
+            >
+            <select
+              id="classSelect"
+              class="w-full border border-gray-300 rounded px-3 py-2"
+            >
+              <option>Grade 10</option>
+              <option>Grade 9</option>
+              <option>Grade 8</option>
+              <option>Grade 7</option>
+            </select>
+          </div>
+
+          <!-- Selected Class Grades -->
+          <div class="bg-white p-6 rounded shadow">
+            <h2
+              class="text-lg font-bold text-[color:var(--color-primary)] mb-4"
+            >
+              <i class="fas fa-graduation-cap mr-2"></i>Grades
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left border border-gray-200">
+                <thead class="bg-[color:var(--color-primary)] text-white">
+                  <tr>
+                    <th class="py-2 px-4">Subject</th>
+                    <th class="py-2 px-4">Term 1</th>
+                    <th class="py-2 px-4">Term 2</th>
+                    <th class="py-2 px-4">Final Exam</th>
+                  </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                  <tr class="border-b">
+                    <td class="py-2 px-4">Mathematics</td>
+                    <td class="py-2 px-4">A</td>
+                    <td class="py-2 px-4">A-</td>
+                    <td class="py-2 px-4">B+</td>
+                  </tr>
+                  <tr class="border-b">
+                    <td class="py-2 px-4">Science</td>
+                    <td class="py-2 px-4">B</td>
+                    <td class="py-2 px-4">A</td>
+                    <td class="py-2 px-4">A</td>
+                  </tr>
+                  <tr class="border-b">
+                    <td class="py-2 px-4">English</td>
+                    <td class="py-2 px-4">A</td>
+                    <td class="py-2 px-4">A</td>
+                    <td class="py-2 px-4">A+</td>
+                  </tr>
+                  <tr class="border-b">
+                    <td class="py-2 px-4">Nepali</td>
+                    <td class="py-2 px-4">B+</td>
+                    <td class="py-2 px-4">B</td>
+                    <td class="py-2 px-4">B</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 text-right text-lg font-medium text-green-600">
+              Overall GPA: 3.78
+            </p>
+          </div>
+        </main>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

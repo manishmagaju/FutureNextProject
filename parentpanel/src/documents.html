@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Documents - FutureNest Academy</title>
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    :root {
-      --color-primary: #1e40af;
-      --color-secondary: #facc15;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 font-sans">
-  <div class="flex">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
-      <div class="p-6 text-center border-b border-gray-200">
-        <h2 class="text-xl font-bold text-[color:var(--color-primary)]">FutureNest Academy</h2>
-        <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
-      </div>
-      <nav class="mt-6 px-4">
-        <ul class="space-y-4 text-gray-700">
-          <li>
-            <a href="grades.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-graduation-cap"></i> Grades
-            </a>
-          </li>
-          <li>
-            <a href="attendance.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-calendar-check"></i> Attendance
-            </a>
-          </li>
-          <li>
-            <a href="notifications.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-bell"></i> Notifications
-            </a>
-          </li>
-          <li>
-            <a href="documents.html" class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold">
-              <i class="fas fa-file-alt"></i> Documents
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]">
-              <i class="fas fa-envelope"></i> Contact Teacher
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <div class="ml-64 w-full">
-      <!-- Header -->
-      <header class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200">
-        <h1 class="text-xl font-semibold text-gray-800 flex items-center gap-2">
-          <i class="fas fa-file-alt mr-2 text-[color:var(--color-primary)]"></i>
-          Documents
-        </h1>
-        <a href="parent-dashboard.html" class="text-sm text-[color:var(--color-primary)] hover:underline">
-          ← Back to Dashboard
-        </a>
-      </header>
-
-      <!-- Documents Section -->
-      <main class="p-6 space-y-6">
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-lg font-bold text-[color:var(--color-primary)] mb-4">
-            <i class="fas fa-folder-open mr-2"></i> Available Documents
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documents - FutureNest Academy</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
+        <div class="p-6 text-center border-b border-gray-200">
+          <h2 class="text-xl font-bold text-[color:var(--color-primary)]">
+            FutureNest Academy
           </h2>
-          <ul class="space-y-4">
-            <li class="flex justify-between items-center border p-4 rounded">
-              <span>Grade 10 Report Card - Term 1</span>
-              <a href="#" class="text-[color:var(--color-primary)] hover:underline"><i class="fas fa-download mr-1"></i>Download</a>
+          <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
+        </div>
+        <nav class="mt-6 px-4">
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              <a
+                href="grades.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-graduation-cap"></i> Grades
+              </a>
             </li>
-            <li class="flex justify-between items-center border p-4 rounded">
-              <span>Attendance Summary - 2025</span>
-              <a href="#" class="text-[color:var(--color-primary)] hover:underline"><i class="fas fa-download mr-1"></i>Download</a>
+            <li>
+              <a
+                href="attendance.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-calendar-check"></i> Attendance
+              </a>
             </li>
-            <li class="flex justify-between items-center border p-4 rounded">
-              <span>Medical Record</span>
-              <a href="#" class="text-[color:var(--color-primary)] hover:underline"><i class="fas fa-download mr-1"></i>Download</a>
+            <li>
+              <a
+                href="notifications.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-bell"></i> Notifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="documents.html"
+                class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold"
+              >
+                <i class="fas fa-file-alt"></i> Documents
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-envelope"></i> Contact Teacher
+              </a>
             </li>
           </ul>
-        </div>
-      </main>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="ml-64 w-full">
+        <!-- Header -->
+        <header
+          class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200"
+        >
+          <h1
+            class="text-xl font-semibold text-gray-800 flex items-center gap-2"
+          >
+            <i
+              class="fas fa-file-alt mr-2 text-[color:var(--color-primary)]"
+            ></i>
+            Documents
+          </h1>
+          <a
+            href="parent-dashboard.html"
+            class="text-sm text-[color:var(--color-primary)] hover:underline"
+          >
+            ← Back to Dashboard
+          </a>
+        </header>
+
+        <!-- Documents Section -->
+        <main class="p-6 space-y-6">
+          <div class="bg-white p-6 rounded shadow">
+            <h2
+              class="text-lg font-bold text-[color:var(--color-primary)] mb-4"
+            >
+              <i class="fas fa-folder-open mr-2"></i> Available Documents
+            </h2>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center border p-4 rounded">
+                <span>Grade 10 Report Card - Term 1</span>
+                <a
+                  href="#"
+                  class="text-[color:var(--color-primary)] hover:underline"
+                  ><i class="fas fa-download mr-1"></i>Download</a
+                >
+              </li>
+              <li class="flex justify-between items-center border p-4 rounded">
+                <span>Attendance Summary - 2025</span>
+                <a
+                  href="#"
+                  class="text-[color:var(--color-primary)] hover:underline"
+                  ><i class="fas fa-download mr-1"></i>Download</a
+                >
+              </li>
+              <li class="flex justify-between items-center border p-4 rounded">
+                <span>Medical Record</span>
+                <a
+                  href="#"
+                  class="text-[color:var(--color-primary)] hover:underline"
+                  ><i class="fas fa-download mr-1"></i>Download</a
+                >
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
