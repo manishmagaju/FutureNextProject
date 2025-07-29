@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Attendance - Parent Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance - FutureNest</title>
   <link href="./output.css" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
       --color-primary: #1e40af;
@@ -16,110 +13,45 @@
     }
   </style>
 </head>
-<body class="bg-gray-100 min-h-screen font-sans">
+<body class="bg-gray-100 font-sans">
   <div class="flex">
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
       <div class="p-6 text-center border-b border-gray-200">
-        <h2 class="text-xl font-bold" style="color: var(--color-primary);">
-          FutureNest
-        </h2>
+        <h2 class="text-xl font-bold text-[color:var(--color-primary)]">FutureNest</h2>
         <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
       </div>
       <nav class="mt-6 px-4">
         <ul class="space-y-4 text-gray-700">
-          <li>
-            <a
-              href="grades.html"
-              class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
-              ><i class="fas fa-graduation-cap"></i> Grades</a
-            >
-          </li>
-          <li>
-            <a
-              href="attendance.html"
-              class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold"
-              ><i class="fas fa-calendar-check"></i> Attendance</a
-            >
-          </li>
-          <li>
-            <a
-              href="notifications.html"
-              class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
-              ><i class="fas fa-bell"></i> Notifications</a
-            >
-          </li>
-          <li>
-            <a
-              href="documents.html"
-              class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
-              ><i class="fas fa-file-alt"></i> Documents</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
-              ><i class="fas fa-envelope"></i> Contact Teacher</a
-            >
-          </li>
+          <li><a href="grades.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"><i class="fas fa-graduation-cap"></i> Grades</a></li>
+          <li><a href="attendance.html" class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+          <li><a href="notifications.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"><i class="fas fa-bell"></i> Notifications</a></li>
+          <li><a href="documents.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"><i class="fas fa-file-alt"></i> Documents</a></li>
+          <li><a href="contact.html" class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"><i class="fas fa-envelope"></i> Contact Teacher</a></li>
         </ul>
       </nav>
     </aside>
 
-    <!-- Main content -->
-    <div class="ml-64 flex-1">
-      <!-- Topbar -->
-      <header
-        class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200"
-      >
-        <h1
-          class="text-xl font-semibold text-gray-800 flex items-center gap-2"
-        >
-          <i class="fas fa-calendar-check text-[color:var(--color-primary)]"></i>
-          Attendance
+    <!-- Main Content -->
+    <div class="ml-64 w-full">
+      <header class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200">
+        <h1 class="text-xl font-semibold text-gray-800 flex items-center gap-2">
+          <i class="fas fa-calendar-check text-[color:var(--color-primary)]"></i> Attendance
         </h1>
-        <button
-          class="bg-[color:var(--color-primary)] text-white px-4 py-2 rounded hover:opacity-90 flex items-center gap-2"
-        >
-          <i class="fas fa-sign-out-alt"></i> Logout
-        </button>
       </header>
-
       <main class="p-6">
-        <div class="bg-white rounded shadow p-6 max-w-4xl mx-auto">
-          <h2
-            class="text-2xl font-bold mb-4 text-[color:var(--color-primary)]"
-          >
-            Attendance Summary for Aarav Sharma
-          </h2>
-
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr>
-                <th class="border-b border-gray-300 p-3">Date</th>
-                <th class="border-b border-gray-300 p-3">Status</th>
-                <th class="border-b border-gray-300 p-3">Remarks</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="odd:bg-gray-50">
-                <td class="p-3">2025-07-20</td>
-                <td class="p-3 text-green-600 font-semibold">Present</td>
-                <td class="p-3">On time</td>
-              </tr>
-              <tr class="odd:bg-gray-50">
-                <td class="p-3">2025-07-19</td>
-                <td class="p-3 text-red-600 font-semibold">Absent</td>
-                <td class="p-3">Sick leave</td>
-              </tr>
-              <tr class="odd:bg-gray-50">
-                <td class="p-3">2025-07-18</td>
-                <td class="p-3 text-green-600 font-semibold">Present</td>
-                <td class="p-3">On time</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-lg font-bold text-[color:var(--color-primary)] mb-4">Overall Attendance</h2>
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div class="w-32 h-32 rounded-full border-[10px] border-green-400 flex items-center justify-center text-2xl font-bold text-green-600">
+              92%
+            </div>
+            <div>
+              <p class="text-gray-700 text-lg">Total School Days: <span class="font-semibold">180</span></p>
+              <p class="text-gray-700 text-lg">Days Present: <span class="font-semibold">165</span></p>
+              <p class="text-gray-700 text-lg">Days Absent: <span class="font-semibold text-red-500">15</span></p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
