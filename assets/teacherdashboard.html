@@ -23,26 +23,30 @@
   </script>
 </head>
 <body class="bg-slate-200">
-    <div class="flex ">
+    <div class="flex flex-col md:flex-row min-h-screen">
       <!--side bar-->
-      <aside>
-        <h2 class="text-2xl font-bold font-sans">Dashboard</h2>
-        <nav>
-          <ul>
-          <li><a href="#">Classes</a></li>
-          <li><a href="#">Students</a></li>
-          <li><a href="#">Assignments</a></li>
-           <li><a href="#">Attendance</a></li>
-          <li><a href="#">Messages</a></li>
+      <div class="hidden md:flex">
+      <aside class="w-64 bg-white shadow-lg p-5">
+        <h2 class="text-2xl font-bold font-sans mb-6" >Dashboard</h2>
+        <nav >
+          <ul class="space-y-4">
+          <li><a href="#" class="hover:text-primary font-semibold" >Classes</a></li>
+          <li><a href="#" class=" hover:text-primary font-semibold" >Students</a></li>
+          <li><a href="#" class=" hover:text-primary font-semibold ">Assignments</a></li>
+           <li><a href="#" class=" hover:text-primary font-semibold" >Attendance</a></li>
+          <li><a href="#"  class=" hover:text-primary font-semibold" >Messages</a></li>
 
           </ul>
         </nav>
       </aside>
+      </div>
         <!--Main content-->
               <main>
-      <div>
+      <header class="flex justify-between items-center">
+        <h1>Welcome Mr, Ram</h1>
+        <button>+ new Assignment</button>
 
-      </div>
+      </header>
 
     </div>
   </main>
