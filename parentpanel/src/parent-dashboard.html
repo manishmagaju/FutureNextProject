@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parent Dashboard - FutureNest Academy</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
+        <div class="p-6 text-center border-b border-gray-200">
+          <h2 class="text-xl font-bold text-[color:var(--color-primary)]">
+            FutureNest Academy
+          </h2>
+          <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
+        </div>
+        <nav class="mt-6 px-4">
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              <a
+                href="grades.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-graduation-cap"></i> Grades
+              </a>
+            </li>
+            <li>
+              <a
+                href="attendance.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-calendar-check"></i> Attendance
+              </a>
+            </li>
+            <li>
+              <a
+                href="notifications.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-bell"></i> Notifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="documents.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-file-alt"></i> Documents
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-envelope"></i> Contact Teacher
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="ml-64 w-full">
+        <!-- Header -->
+        <header
+          class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200"
+        >
+          <h1
+            class="text-xl font-semibold text-gray-800 flex items-center gap-2"
+          >
+            <i class="fas fa-home text-[color:var(--color-primary)]"></i>
+            Dashboard
+          </h1>
+          <button
+            class="bg-[color:var(--color-primary)] text-white px-4 py-2 rounded hover:opacity-90 flex items-center gap-2"
+          >
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </header>
+
+        <!-- Welcome Section -->
+        <main class="p-6">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
+          >
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-gray-500">Student Name</p>
+              <h2 class="text-lg font-bold text-[color:var(--color-primary)]">
+                Aarav Sharma
+              </h2>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-gray-500">Class & Section</p>
+              <h2 class="text-lg font-bold text-[color:var(--color-primary)]">
+                Grade 9 - A
+              </h2>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-gray-500">Attendance</p>
+              <h2 class="text-lg font-bold text-green-600">92%</h2>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <p class="text-gray-500">Latest Grade</p>
+              <h2 class="text-lg font-bold text-[color:var(--color-secondary)]">
+                A
+              </h2>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow mt-6">
+            <h3
+              class="text-lg font-semibold mb-2 text-[color:var(--color-primary)]"
+            >
+              <i class="fas fa-bell mr-2"></i>Recent Notifications
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Term 1 results published.</li>
+              <li>PTM scheduled for August 10.</li>
+              <li>New assignment added in Math.</li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

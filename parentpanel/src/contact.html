@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Teacher - FutureNest Academy</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-lg h-screen fixed top-0 left-0">
+        <div class="p-6 text-center border-b border-gray-200">
+          <h2 class="text-xl font-bold text-[color:var(--color-primary)]">
+            FutureNest Academy
+          </h2>
+          <p class="text-sm text-gray-500 mt-1">Parent Dashboard</p>
+        </div>
+        <nav class="mt-6 px-4">
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              <a
+                href="grades.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-graduation-cap"></i> Grades
+              </a>
+            </li>
+            <li>
+              <a
+                href="attendance.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-calendar-check"></i> Attendance
+              </a>
+            </li>
+            <li>
+              <a
+                href="notifications.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-bell"></i> Notifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="documents.html"
+                class="flex items-center gap-2 hover:text-[color:var(--color-primary)]"
+              >
+                <i class="fas fa-file-alt"></i> Documents
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex items-center gap-2 text-[color:var(--color-primary)] font-semibold"
+              >
+                <i class="fas fa-envelope"></i> Contact Teacher
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="ml-64 w-full">
+        <!-- Header -->
+        <header
+          class="bg-white shadow p-4 flex justify-between items-center border-b border-gray-200"
+        >
+          <h1
+            class="text-xl font-semibold text-gray-800 flex items-center gap-2"
+          >
+            <i class="fas fa-envelope text-[color:var(--color-primary)]"></i>
+            Contact Teacher
+          </h1>
+          <a
+            href="parent-dashboard.html"
+            class="text-sm text-[color:var(--color-primary)] hover:underline"
+          >
+            ← Back to Dashboard
+          </a>
+        </header>
+
+        <!-- Form Section -->
+        <main class="p-6">
+          <div class="bg-white p-6 rounded shadow max-w-xl mx-auto">
+            <h2
+              class="text-lg font-bold text-[color:var(--color-primary)] mb-4"
+            >
+              <i class="fas fa-paper-plane mr-2"></i>Send a Message
+            </h2>
+            <form class="space-y-4">
+              <div>
+                <label
+                  for="teacherName"
+                  class="block text-sm font-medium text-gray-700"
+                  >Teacher's Name</label
+                >
+                <input
+                  type="text"
+                  id="teacherName"
+                  name="teacherName"
+                  class="mt-1 block w-full p-3 border border-gray-300 rounded"
+                  placeholder="Enter teacher's name"
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="mt-1 block w-full p-3 border border-gray-300 rounded"
+                  placeholder="Message subject"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="mt-1 block w-full p-3 border border-gray-300 rounded"
+                  placeholder="Write your message..."
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="bg-[color:var(--color-primary)] text-white px-4 py-2 rounded hover:bg-blue-800"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
