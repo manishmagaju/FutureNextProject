@@ -1,138 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#5900b3',
-            secondary:'#009999'
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-slate-200">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5900b3",
+              secondary: "#009999",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-200">
     <div class="flex flex-col md:flex-row min-h-screen">
       <!--side bar-->
       <div class="hidden md:flex">
-      <aside class="w-64 bg-white shadow-lg p-5">
-        <h2 class="text-2xl font-bold font-sans mb-6" >Dashboard</h2>
-        <nav >
-          <ul class="space-y-4">
-          <li><a href="#" class="hover:text-primary font-semibold" >Classes</a></li>
-          <li><a href="#" class=" hover:text-primary font-semibold" >Students</a></li>
-          <li><a href="#" class=" hover:text-primary font-semibold ">Assignment</a></li>
-           <li><a href="#" class=" hover:text-primary font-semibold" >Attendance</a></li>
-          <li><a href="#"  class=" hover:text-primary font-semibold" >Messages</a></li>
-
-          </ul>
-        </nav>
-      </aside>
+        <aside class="w-64 bg-white shadow-lg p-5">
+          <h2 class="text-2xl font-bold font-sans mb-6">Dashboard</h2>
+          <nav>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-primary font-semibold">Classes</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary font-semibold"
+                  >Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary font-semibold"
+                  >Assignment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary font-semibold"
+                  >Attendance</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary font-semibold"
+                  >Messages</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </div>
       <div class="container">
         <!--Main content-->
-              <main class="flex-1 p-8">
-      <header class="flex justify-between items-center">
-        <h1 class="text-3xl font-bold font-sans">Welcome Mr, Ram</h1>
-        <div>
-        <button class= " p-2 rounded md:border-2 md:rounded-2xl bg-secondary md:p-3 hover:bg-primary text-white"> + new Assignment</button>
-</div>
-      </header>
-      <!--student list card-->
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 m-6">
-        <div class="bg-white p-6">
-          <h2 class="text-lg font-semibold">Total student</h2>
-          <p class="text-xl font-bold">128</p>
-        </div>
+        <main class="flex-1 p-8">
+          <header class="flex justify-between items-center">
+            <h1 class="text-3xl font-bold font-sans">Welcome Mr, Ram</h1>
+            <div>
+              <button
+                class="p-2 rounded md:border-2 md:rounded-2xl bg-secondary md:p-3 hover:bg-primary text-white"
+              >
+                + new Assignment
+              </button>
+            </div>
+          </header>
+          <!--student list card-->
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-4 m-6">
+            <div class="bg-white p-6">
+              <h2 class="text-lg font-semibold">Total student</h2>
+              <p class="text-xl font-bold">128</p>
+            </div>
 
-        <div class="bg-white p-6">
-          <h2 class="text-lg font-semibold">Today Attendance</h2>
-          <p class="text-xl font-bold"> 89%</p>
-        </div>
-        <div class="bg-white p-6">
-          <h2 class="text-lg font-semibold">Assignment Due</h2>
-          <p class="text-xl font-bold"> 3 </p>
-        </div>
+            <div class="bg-white p-6">
+              <h2 class="text-lg font-semibold">Today Attendance</h2>
+              <p class="text-xl font-bold">89%</p>
+            </div>
+            <div class="bg-white p-6">
+              <h2 class="text-lg font-semibold">Assignment Due</h2>
+              <p class="text-xl font-bold">3</p>
+            </div>
+          </section>
+          <!--My classes-->
+          <section>
+            <h2 class="text-2xl font-sans font-bold">Your Classes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+              <div class="bg-white m-4">
+                <h2 class="text-2xl px-2 py-3 font-semibold">Math 10A</h2>
+                <p class="text-lg px-2 py-3">40 Student</p>
+              </div>
 
-      </section>
-      <!--My classes-->
-      <section>
-        <h2 class="text-2xl  font-sans font-bold">Your Classes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <div class="bg-white m-4">
-            <h2 class="text-2xl px-2 py-3 font-semibold">Math 10A</h2>
-            <p class="text-lg px-2 py-3">40 Student</p>
-          </div>
+              <div class="bg-white m-4">
+                <h2 class="text-2xl px-2 font-semibold py-3">Science 10B</h2>
+                <p class="text-lg px-2 py-3">30 Student</p>
+              </div>
+            </div>
+          </section>
+          <!--test table-->
+          <section class="m-6">
+            <div class="flex justify-between">
+              <h2 class="text-2xl font-sans font-bold">Student Test</h2>
 
-          <div  class="bg-white m-4">
-               <h2 class="text-2xl px-2 font-semibold py-3">Science 10B</h2>
-            <p class="text-lg px-2 py-3">30 Student</p> 
-                   </div>
-        </div>
+              <button
+                class="m-3 p-2 rounded md:border-2 md:rounded-2xl bg-secondary md:p-3 hover:bg-primary text-white"
+              >
+                + Add Test
+              </button>
+            </div>
 
-      </section>
-      <!--test table-->
-      <section class="m-6">
-        <div class=" flex  justify-between">
-                <h2 class="text-2xl  font-sans font-bold">Student Test</h2>
-                
-      <button class= " m-3 p-2 rounded md:border-2 md:rounded-2xl bg-secondary md:p-3 hover:bg-primary text-white"> + Add Test</button>
-
-          </div>
-          
-        <table class="border-2 bg-white border-gray-200 rounded-lg min-w-full m-2">
-          <thead>
-            <tr>
-            <th class="px-4 py-2 border-b text-primary">Test name</th>
-            <th class="px-4 py-2 border-b text-primary"> DeadLine</th>
-            <th class="px-4 py-2 border-b text-primary"> Student Name</th>
-            <th class="px-4 py-2 border-b text-primary"> Status</th>
-</tr>
-          </thead>
-          <tr>
-            <td class="px-4 py-2 border-b">Math</td>
-            <td class="px-4 py-2 border-b">2082-04-10</td>
-            <td class="px-4 py-2 border-b"> Hari</td>
-            <td class="px-4 py-2 border-b"> Active</td>
-
-          </tr>
-          <tr>
-            <td class="px-4 py-2 border-b">Science</td>
-            <td class="px-4 py-2 border-b"> 2085-04-12</td>
-            <td class="px-4 py-2 border-b"> Willam</td>
-            <td class="px-4 py-2 border-b">Completed</td>
-
-          </tr>
-          <tr>
-            <td class="px-4 py-2 border-b">DSA</td>
-            <td class="px-4 py-2 border-b">2082-05-01</td>
-            <td class="px-4 py-2 border-b">john</td>
-            <td class="px-4 py-2 border-b"> Not reveiwed</td>
-
-          </tr>
-
-        </table>
-        
-
-      </section>
-        
-
-  </main>
+            <table
+              class="border-2 bg-white border-gray-200 rounded-lg min-w-full m-2"
+            >
+              <thead>
+                <tr>
+                  <th class="px-4 py-2 border-b text-primary">Test name</th>
+                  <th class="px-4 py-2 border-b text-primary">DeadLine</th>
+                  <th class="px-4 py-2 border-b text-primary">Student Name</th>
+                  <th class="px-4 py-2 border-b text-primary">Status</th>
+                </tr>
+              </thead>
+              <tr>
+                <td class="px-4 py-2 border-b">Math</td>
+                <td class="px-4 py-2 border-b">2082-04-10</td>
+                <td class="px-4 py-2 border-b">Hari</td>
+                <td class="px-4 py-2 border-b">Active</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border-b">Science</td>
+                <td class="px-4 py-2 border-b">2085-04-12</td>
+                <td class="px-4 py-2 border-b">Willam</td>
+                <td class="px-4 py-2 border-b">Completed</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border-b">DSA</td>
+                <td class="px-4 py-2 border-b">2082-05-01</td>
+                <td class="px-4 py-2 border-b">john</td>
+                <td class="px-4 py-2 border-b">Not reveiwed</td>
+              </tr>
+            </table>
+          </section>
+        </main>
       </div>
-
-    
-    
-</body>
+    </div>
+  </body>
 </html>
