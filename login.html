@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E90FF",
+            secondary: "#F9A825",
+          },
+          fontFamily: {
+            sans: ["poppins"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <main class="bg-primary/50 flex items-center justify-center">
+    <section class="h-svh flex items-center justify-center">
+      <div class="container mx-auto px-4">
+        <div class="md:flex lg:flex">
+          <!-- div1-->
+          <div class="rounded-2xl bg-primary/50 py-10 px-5 mt-24 md:mt-0 lg:mt-0">
+            <h2 class="text-4xl font-semibold">Welcome back</h2>
+            <p class="text-sm mt-3">
+              To stay connected with us please login with your personal info
+            </p>
+            <div class="flex justify-center">
+              <button class="font-semibold bg-primary text-xl px-24 rounded hover:text-white mt-24 py-3">
+                SIGN IN
+              </button>
+            </div>
+          </div>
+
+          <!-- div2 -->
+          <div class="rounded-2xl bg-primary/50 py-10 px-5 mt-3 md:mt-0 lg:mt-0 md:ml-3 lg:ml-3">
+            <h2 class="text-4xl font-semibold">Welcome to FutureNext</h2>
+            <p class="my-2">Login to your account to continue</p>
+            <form action="#" class="px-4 sm:flex sm:flex-col md:flex md:flex-col lg:flex-col">
+              <input class="my-2 rounded pl-4 py-4" type="email" placeholder="Enter your email" />
+              <input class="my-2 rounded pl-5 py-4" type="password" placeholder="Enter your password" />
+              <p class="text-sm">Forget password ?</p>
+              <div class="flex justify-center">
+                <button class="font-semibold bg-primary text-xl px-24 rounded hover:text-white mt-3 py-3">
+                  login
+                </button>
+              </div>
+              <p class="text-sm pt-3">
+                Don't have an account ?
+                <span class="text-md font-semibold">signup</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
