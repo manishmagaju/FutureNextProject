@@ -13,7 +13,7 @@ const studentSchema = new mongoose.Schema(
       type: String,
       required: [true, "Address is required"],
       trim: true,
-      minlength: [5, "Address must be at least 5 characters"],
+      minlength: [2, "Address must be at least 5 characters"],
       maxlength: [200, "Address cannot exceed 200 characters"],
     },
     dob: {
@@ -71,7 +71,7 @@ const studentSchema = new mongoose.Schema(
     },
     emailId: {
       type: String,
-      //required: [true, "Email ID is required"],
+      required: [true, "Email ID is required"],
       unique: true,
       lowercase: true,
       match: [
