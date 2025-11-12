@@ -1,7 +1,7 @@
 import {
   HOME_ROUTE,
   MYCOURSES_ROUTE,
-  ASSINGEMENT_ROUTE,
+  ASSIGNMENT_ROUTE,
   RESULT_ROUTE,
 } from "./routes";
 
@@ -12,11 +12,11 @@ const navlink = [
   },
   {
     route: MYCOURSES_ROUTE,
-    label: "Courses",
+    label: "MyCourses",
   },
   {
-    route: ASSINGEMENT_ROUTE,
-    label: "Assingement",
+    route: ASSIGNMENT_ROUTE,
+    label: "Assignment",
   },
   {
     route: RESULT_ROUTE,

@@ -5,9 +5,13 @@ import navlink from "../constants/navlink.js";
 
 const NavMenu = () => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 text-sm my-2">
       {navlink.map((navlink) => (
-        <Link href={navlink.route} key={navlink.route}>
+        <Link
+          href={navlink.route}
+          key={navlink.route}
+          className="hover:text-red-600"
+        >
           {navlink.label}
         </Link>
       ))}
