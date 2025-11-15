@@ -1,5 +1,6 @@
 import { getcourses } from "../api/courses";
 import Link from "next/link";
+import { MdSettings } from "react-icons/md";
 
 const MyCoursesPage = async () => {
   const courses = await getcourses();
@@ -12,10 +13,12 @@ const MyCoursesPage = async () => {
         <table className="w-full border-collapse border border-gray-300">
           <thead className="bg-gray-100">
             <tr>
-              <th className="border p-2 text-red-600">Course Name</th>
-              <th className="border p-2  text-red-600">Duration</th>
-              <th className="border p-2  text-red-600">Teacher</th>
-              <th className="border p-2  text-red-600">Action</th>
+              <th className="border p-2">Course Name</th>
+              <th className="border p-2 ">Duration</th>
+              <th className="border p-2 ">Teacher</th>
+              <th className="border p-2  ">
+                <MdSettings />{" "}
+              </th>
             </tr>
           </thead>
 
