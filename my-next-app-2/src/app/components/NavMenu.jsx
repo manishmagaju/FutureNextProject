@@ -1,0 +1,22 @@
+import React from "react";
+
+import Link from "next/link";
+import navlink from "../constants/navlink";
+
+const NavMenu = () => {
+  return (
+    <div className="flex gap-3 text-sm my-2">
+      {navlink.map((navlink) => (
+        <Link
+          href={navlink.route}
+          key={navlink.route}
+          className="hover:text-red-600"
+        >
+          {navlink.label}
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default NavMenu;
