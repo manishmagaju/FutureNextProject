@@ -1,7 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
-import navlink from "../constants/navlink.js";
+import navlink from "../constants/navlink";
 
 const NavMenu = () => {
   return (

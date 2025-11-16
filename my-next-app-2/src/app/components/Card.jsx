@@ -14,7 +14,6 @@ export default function TodayCourses() {
           const start = new Date(course["start-date"]);
           const end = new Date(course["end-date"]);
 
-          
           if (isNaN(start) || isNaN(end)) return false;
 
           return today >= start && today <= end;
@@ -29,10 +28,12 @@ export default function TodayCourses() {
     return <p className="text-center mt-10">No courses today</p>;
 
   return (
-    <section class="py-12 md:py-14 bg-slate-200">
-      <div class="container mx-auto px-8">
-        <h2 class="text-3xl font-bold text-center mb-10">Today's classes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section className="py-12 md:py-14 bg-slate-200">
+      <div className="container mx-auto px-8">
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Today's classes
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {courses.map((course) => (
             <div key={course.id} className="bg-white rounded-lg shadow-md">
               {course.image && (
